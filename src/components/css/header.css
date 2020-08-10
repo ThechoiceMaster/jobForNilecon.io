@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container-box {
+  height: 100vh;
+  background-color: white;
+}
+.content-h {
+  max-width: 100%;
+}
+.img1 {
+  background-image: url(/img/rx.png);
+  filter: brightness(50%) blur(2px);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+.img2 {
+  background-image: url(/img/ry.jpg);
+  filter: brightness(50%) blur(2px);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+.img3 {
+  background-image: url(/img/ra.jpg);
+  filter: brightness(70%);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  height: auto;
+  transition: .5s ease-in-out  ;
+}
+.nav.sticky {
+    background-color: blue;
+    padding: 0 100px;
+}
+
+.logo {
+  margin-top: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.icon {
+  width: 50px;
+  padding-top: 5px;
+  color: white;
+  text-align: center;
+}
+.i {
+  margin-left: 15px;
+  color: white;
+}
+.menubar {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  user-select: none;
+  font-weight: bold;
+}
+.menubar ul li .i2 {
+    color: red;
+    padding-top: 10px;
+}
+.menubar ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menubar ul li {
+  cursor: pointer;
+}
+.menubar ul li:hover {
+    color: gold;
+}
+.menu-1 {
+  display: none;
+}
+.menubar ul li .menu-1 {
+  
+}
+.menubar ul li:hover .menu-1 {
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  margin-left: -50px;
+}
+.menubar ul li:hover .menu-1 ul {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: left;
+}
+.menubar ul li:hover .menu-1 ul li {
+  margin-top: -35px;
+  cursor: auto;
+  padding-left: 20px;
+}
+.menubar ul li:hover .menu-1 ul li:nth-child(1) {
+  margin-top: 0;
+}
+
+.menubar ul li:hover .menu-1 ul li a {
+  color: #4f4f4f;
+  text-decoration: none;
+}
+.menubar ul li:hover .menu-1 ul li a:hover {
+    color: red;
+  }
+  
