@@ -14,7 +14,7 @@
 }
 .img1 {
   background-image: url(/img/rx.png);
-  filter: brightness(50%) blur(2px);
+  filter: brightness(70%) ;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -23,7 +23,7 @@
 }
 .img2 {
   background-image: url(/img/ry.jpg);
-  filter: brightness(50%) blur(2px);
+  filter: brightness(70%);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -52,7 +52,7 @@
   transition: .5s ease-in-out  ;
 }
 .nav.sticky {
-    background-color: blue;
+    background-color: #002DCE;
     padding: 0 100px;
 }
 
@@ -83,6 +83,7 @@
   line-height: 70px;
   user-select: none;
   font-weight: bold;
+
 }
 .menubar ul li .i2 {
     color: red;
@@ -103,14 +104,12 @@
 .menu-1 {
   display: none;
 }
-.menubar ul li .menu-1 {
-  
-}
 .menubar ul li:hover .menu-1 {
   display: block;
   flex-direction: column;
   position: absolute;
   margin-left: -50px;
+
 }
 .menubar ul li:hover .menu-1 ul {
   display: block;
@@ -118,6 +117,8 @@
   margin-right: 10px;
   background-color: white;
   border-radius: 5px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+
   text-align: left;
 }
 .menubar ul li:hover .menu-1 ul li {

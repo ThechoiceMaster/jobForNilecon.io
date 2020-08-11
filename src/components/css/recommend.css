@@ -1,0 +1,32 @@
+.container-recommend {
+  background-image: url(/img/recommend.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+.recommend {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+.text-recommend {
+    color: white;
+    font-size: 40px;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-recommend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.img-recommend img {
+    border-radius: 15px;
+}
