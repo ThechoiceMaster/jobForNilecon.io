@@ -1,0 +1,102 @@
+@media only screen and (min-width: 600px), (max-width: 600px) {
+  .container-last {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .detail {
+    font-size: 24px;
+    color: #4f4f4f;
+  }
+  .vdo-r {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container-last {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+  }
+  .detail {
+    width: 40%;
+    margin: 2rem 5px;
+    font-size: 20px;
+  }
+  .text-title {
+    width: 50%;
+  }
+  .text-title h1 {
+    font-size: 20px;
+  }
+  .vdo-r {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container-last {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+  }
+  .text-title {
+    width: 50%;
+  }
+  .text-title h1 {
+    font-size: 40px;
+    text-align: left;
+    margin: 1rem 0;
+  }
+  .vdo-r {
+    height: 300px;
+  }
+  .detail {
+    margin-top: 4rem;
+    margin-left: 50px;
+    width: 50%;
+  }
+  .detail p {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .container-last {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .text-title {
+    width: 50%;
+  }
+  .text-title h1 {
+    margin-left: -20px;
+    width: 50%;
+    color: #4f4f4f;
+  }
+  .vdo {
+    width: 100%;
+    cursor: pointer;
+  }
+  .vdo-r {
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .detail {
+    cursor: pointer;
+    width: 50%;
+    margin-left: 50px;
+    display: flex;
+    color: #4f4f4f;
+  }
+  .detail p {
+    font-size: 40px;
+  }
+  .last {
+    margin-bottom: 5rem;
+  }
+}

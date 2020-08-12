@@ -1,32 +1,115 @@
-.container-recommend {
-  background-image: url(/img/recommend.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
+@media only screen and (max-width: 600px), (min-width: 600px) {
+  .container-recommend {
+    background-image: url(/img/recommend.jpg);
+    height: auto;
+    width: 100%;
+  }
+  .container-recommend .container-re {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .container-recommend .container-re .text-recommend {
+    font-size: 26px;
+    color: white;
+    width: 100%;
+    height: auto;
+  }
+  .container-recommend .container-re .img-recommend {
+    width: 100%;
+  }
 }
-.recommend {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+@media only screen and (min-width: 768px) {
+  .container-recommend {
+    background-image: url(/img/recommend.jpg);
+    background-size: cover;
+    height: auto;
+  }
+  .container-recommend .container-re {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .container-recommend .container-re .text-recommend {
+    font-size: 26px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: auto;
+  }
+  .container-recommend .container-re .img-recommend {
+    height: auto;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 986px) {
+  .container-recommend .container-re {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100%;
-}
-.text-recommend {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .container-recommend .container-re .text-recommend {
+    font-size: 26px;
     color: white;
-    font-size: 40px;
-    align-items: center;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+    width: 50%;
+    text-align: left;
+    height: auto;
+  }
+  .container-recommend .container-re .img-recommend {
+    height: auto;
+    width: auto;
+    margin: 1rem 0;
+  }
 }
-.img-recommend {
+@media only screen and (min-width: 1200px) {
+  .container-recommend .container-re {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .container-recommend .container-re .text-recommend {
+    font-size: 30px;
+    color: white;
+    width: 40%;
+    text-align: left;
+    height: auto;
+  }
+  .container-recommend .container-re .img-recommend {
+    height: auto;
+    width: 50%;
+    margin: 1rem 0;
+  }
 }
-.img-recommend img {
-    border-radius: 15px;
+@media only screen and (min-width: 1500px) {
+  .container-recommend .container-re {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .container-recommend .container-re .text-recommend {
+    font-size: 30px;
+    color: white;
+    width: 40%;
+    text-align: left;
+    height: auto;
+  }
+  .container-recommend .container-re .img-recommend {
+    height: auto;
+    width: 50%;
+    margin: 1rem 0;
+  }
 }

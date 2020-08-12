@@ -1,0 +1,143 @@
+@media only screen and (max-width: 600px), (min-width: 600px) {
+  .container-more {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .container-more .item-more {
+    width: 100%;
+  }
+  .boxM {
+    padding: 5px;
+  }
+  .slide-img .imgM {
+    width: 100%;
+    border-radius: 15px;
+    margin: 20px 0;
+    filter: brightness(70%);
+  }
+  .more {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .show-more {
+    display: flex;
+    width: 90%;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: #dfdfdf;
+    height: auto;
+    padding: 1rem;
+    margin: 10px auto;
+  }
+  .show-more .btn-more {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #4f4f4f;
+  }
+  .null {
+    position: absolute;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container-more,
+  .more {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 5px;
+    width: 100%;
+  }
+  .more .item-more {
+    width: 45%;
+    height: 270px;
+    margin-bottom: 5px;
+  }
+  .container-more .item-more {
+    width: 45%;
+    height: 270px;
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container-more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .container-more .item-more {
+    width: 23%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .container-more2 {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .container-more2 .container-more .item-more {
+    width: 25%;
+  }
+  .container-more2 .container-more .item-more .boxM {
+    width: 220px;
+    padding: 0;
+  }
+  .show-more {
+    height: 70px;
+    display: flex;
+    margin-top: 1rem;
+    background-color: #dfdfdf;
+    opacity: 0.5;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  .show-more button {
+    color: #4f4f4f;
+    z-index: 1;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 1px;
+  }
+  .show-more button:hover {
+    color: blue;
+    z-index: 1;
+    outline: none;
+    border-bottom: 1px solid blue;
+  }
+  .show-more button:focus {
+    border: none;
+    outline: none;
+  }
+  .null {
+    position: absolute;
+  }
+
+  .btn-more {
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  .item {
+    width: 25%;
+  }
+  .more {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

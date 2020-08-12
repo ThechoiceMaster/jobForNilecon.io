@@ -1,0 +1,41 @@
+.bran {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.manga-item {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.manga-item img {
+    width: 10px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) , (min-width:600px) {
+    .bran {
+        width: 100%;
+    }
+    .bran img {
+        width: 100%;
+    }
+
+}
+@media only screen and (min-width: 1200px) {
+    .bran {
+        width: 80%;
+        margin: 3rem auto;
+    }
+    .bran img {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .bran {
+    width: 100%;
+    }
+}
