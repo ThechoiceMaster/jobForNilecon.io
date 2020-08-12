@@ -5,9 +5,51 @@
   box-sizing: border-box;
   list-style: none;
 }
+@media only screen and (max-width: 375px) {
+  label #btn,
+  label #cancel {
+    position: absolute;
+    cursor: pointer;
+  }
+
+  label #btn {
+    left: 25px;
+    top: 20px;
+    font-size: 25px;
+    color: white;
+    transition: all 0.5s ease;
+  }
+
+  label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 25px;
+    font-size: 20px;
+    color: white;
+    transition: all 0.5s ease;
+    position: fixed;
+  }
+
+  #check {
+    display: none;
+  }
+
+  #check:checked ~ .Header-NavMobile {
+    left: 0;
+  }
+
+  #check:checked ~ label #btn {
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel {
+    left: 70%;
+  }
+}
 @media only screen and (max-width: 600px), (min-width: 600px) {
   .container-box {
-    height: 100vh;
+    height: 70vh;
     background-color: white;
   }
   .content-h {
@@ -20,7 +62,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .img2 {
     background-image: url(/img/ry.jpg);
@@ -29,7 +71,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .img3 {
     background-image: url(/img/ra.jpg);
@@ -38,10 +80,11 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
 
   .nav {
+    display: none;
     position: fixed;
     width: 100%;
     padding: 10px 100px;
@@ -208,12 +251,12 @@
   }
 
   #check:checked ~ label #cancel {
-    left: 92%;
+    left: 80%;
   }
 }
 @media only screen and (min-width: 768px) {
   .container-box {
-    height: 100vh;
+    height: 70vh;
     background-color: white;
   }
   .content-h {
@@ -226,7 +269,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .img2 {
     background-image: url(/img/ry.jpg);
@@ -235,7 +278,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .img3 {
     background-image: url(/img/ra.jpg);
@@ -244,7 +287,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
 
   .nav {
@@ -386,12 +429,12 @@
   }
 
   #check:checked ~ label #cancel {
-    left: 92%;
+    left: 80%;
   }
 }
 @media only screen and (min-width: 986px) {
   .container-box {
-    height: 100vh;
+    height: 70vh;
     background-color: white;
   }
   .content-h {
@@ -403,7 +446,7 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .img2 {
     background-image: url(/img/ry.jpg);
@@ -411,7 +454,7 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .img3 {
     background-image: url(/img/ra.jpg);
@@ -419,7 +462,7 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
 
   .nav {
@@ -567,7 +610,7 @@
 }
 @media only screen and (min-width: 1200px) {
   .container-box {
-    height: 100vh;
+    height: 70vh;
     background-color: white;
   }
   .content-h {
@@ -579,7 +622,7 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .img2 {
     background-image: url(/img/ry.jpg);
@@ -587,7 +630,7 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .img3 {
     background-image: url(/img/ra.jpg);
@@ -595,7 +638,7 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
 
   .nav {
@@ -738,7 +781,7 @@
 }
 @media only screen and (min-width: 1520px) {
   .container-box {
-    height: 100vh;
+    height: 70vh;
     background-color: white;
   }
   .content-h {
@@ -750,7 +793,7 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .img2 {
     background-image: url(/img/ry.jpg);
@@ -758,7 +801,7 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
   .img3 {
     background-image: url(/img/ra.jpg);
@@ -766,7 +809,7 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 70vh;
   }
 
   .nav {
